@@ -20,5 +20,25 @@ I took setup details from 2 sources:
 - https://github.com/rm-hull/bme280
 - I2C troubleshooting: https://www.raspberrypi.org/forums/viewtopic.php?t=115080
 
+# Setup HomeAssistant
+```yaml
+sensor:
+  - platform: mqtt
+    name: "AirClimate Temperature Bedroom"
+    state_topic: "/bedroom/weather/climate"
+    unit_of_measurement: "°C"
+    value_template: "{{ value_json.temperature }}"
+  - platform: mqtt
+    name: "AirClimate Humidity Bedroom"
+    state_topic: "/bedroom/weather/climate"
+    unit_of_measurement: "%"
+    value_template: "{{ value_json.humidity }}"
+  - platform: mqtt
+    name: "AirClimate Pressure Bedroom"
+    state_topic: "/bedroom/weather/climate"
+    unit_of_measurement: "hPa"
+    value_template: "{{ value_json.pressure }}"
+```
+
 # Thanks 
 Utility uses https://github.com/rm-hull/bme280 library
