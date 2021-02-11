@@ -13,7 +13,7 @@ pinout (gpio 2,3; 3v3; gnd)
 sudo adduser pi i2c
 sudo modprobe i2c-dev # source
 pip3 install RPi.bme280
-sudo apt-get install -y i2c-tools && i2cdetect -y 1 # Выясняем адрес
+sudo apt-get install -y i2c-tools && i2cdetect -y 1 # Check the I2C address
 ```
 
 I took setup details from 2 sources:
