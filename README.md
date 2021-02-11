@@ -21,4 +21,4 @@ I took setup details from 2 sources:
 - I2C troubleshooting: https://www.raspberrypi.org/forums/viewtopic.php?t=115080
 
 # Thanks 
-Uses https://github.com/rm-hull/bme280 library
+Utility uses https://github.com/rm-hull/bme280 library
