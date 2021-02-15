@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json, time
 import smbus2, bme280
 import paho.mqtt.client as mqtt
